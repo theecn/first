@@ -1,0 +1,185 @@
+
+		*{
+			padding: 0;
+			margin: 0;
+			color: black;
+			font:30px/2 Microsoft YaHei;
+		}
+		h2{
+			text-align: center;
+			color: black;
+		}
+		ul{
+			list-style-type: none;
+		}
+		.page1,.page2,.page3,.page5{
+			width: 50%;	
+			margin:0 auto;
+		}
+		.page1{
+			border: 1px solid orange;
+			text-align: center;
+		}
+		.page1 ul{
+			width: 50%;
+			margin:0 auto;
+		}
+		.page2 ul{
+			padding: 20px;
+			margin:0;
+		}
+		.page2 ul>li{
+			color: black;
+			font:18px/2 Microsoft YaHei;
+			text-align: justify;
+			padding: 15px;
+			margin-bottom: 30px;
+		}
+		.page2 ul li:first-child{
+			border-radius: 3px;
+			border: 1px solid #ccc;
+
+		}
+		.page2 ul li:nth-child(2){
+			border-right: 7px solid red;
+			border-left: 7px solid red;
+			background: #ffe7e7;
+		}
+		.page2 ul li:nth-of-type(3){
+			border-top: 6px solid #ffeb3b;
+			border-bottom: 6px solid #ffeb3b;
+			background-color: #ffffd7;
+		}
+		.page2 ul li:last-child{
+			border: 1px solid #4caf50;
+			border-bottom: 7px solid #4caf50;
+			background-color: #e7ffe7;
+		}
+		.page3{
+			height: 100%;
+			padding: 20px;
+			text-align: center;
+		}
+		.page3 ul{
+			padding: 8px;
+		}
+		.page3 ul li{
+			display: inline-block;
+			font:18px/2 Microsoft YaHei;
+			text-align: center;
+			width: 80px;
+			border-radius: 8px;
+			transition: all .3s;
+		}
+		.page3 ul li:nth-child(1),.page3 ul li:nth-child(4),.page3 ul li:nth-child(5){
+			color:white;
+		}
+		.page3 ul li:nth-child(2),.page3 ul li:nth-child(3){
+			color:black;
+		}
+		.page3 ul li:first-child{
+			background: #009688;
+		}
+		.page3 ul li:nth-child(2){
+			background: yellow;
+		}
+		.page3 ul li:nth-child(3){
+			background-color: orange;
+		}
+		.page3 ul li:nth-child(4){
+			background: red;
+		}
+		.page3 ul li:nth-child(5){
+			background: green;
+		}
+		.page3 ul li:hover{
+			box-shadow: 0px 5px 10px  0 black;
+			/*第一值设置右偏移，第二个为下偏移，要多了解*/
+			/*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)*/;
+			background: #ccc;
+		}
+
+		.page4 table{
+			width: 50%;
+			margin: 0 auto;
+			text-align: center;
+			border-collapse:collapse;
+			border:1px solid #ccc;
+		}
+		.page4 table tr:first-child{
+			background: #4caf50;
+		}
+		.page4 table tr:nth-child(n) td{
+			color: block;
+			font: 18px/2 Microsoft YaHei；
+		}
+		.page4 table tr:first-child td{
+			color: white;
+		}
+		.page4 table tr:nth-child(2n){
+			background: #ccc;
+		}
+		.page4 table:last-child{
+			border:none;
+		} 
+		.page4 table:last-child tr:first-child{
+			background-color: white;
+		} 
+		.page4 table:last-child tr:first-child td{
+			color:black;
+		}
+		.page4 table:last-child tr:nth-child(n){
+			border-bottom: 1px solid #c1c2c6;
+		} 
+		.page5 ul{
+			margin-bottom: 50px;
+		}
+		.page5 ul li{
+			width: 0px;
+			height: 0px;
+			float: left;
+			margin-left:20px;
+		}
+		.page5 ul li:first-child{
+			border-right: 30px solid yellow;
+			border-top: 30px solid blue;
+			border-left: 30px solid red;
+			border-bottom: 30px solid green;
+		}
+		.page5 ul li:nth-child(2){
+			border-right:30px solid transparent;
+			border-top: 30px solid blue;
+			border-left:30px solid transparent;
+			border-bottom: 30px solid transparent;
+		}
+		.page5 ul li:nth-child(3){
+			border-right:30px solid yellow;
+			border-top: 30px solid transparent;
+			border-left:30px solid transparent;
+			border-bottom: 30px solid transparent;
+		}
+		.page5 ul li:nth-child(4){
+			border-right:30px solid transparent;
+			border-top: 30px solid transparent;
+			border-left:30px solid transparent;
+			border-bottom: 30px solid green;
+		}
+		.page5 ul li:nth-child(5){
+			border-right:30px solid transparent;
+			border-top: 30px solid transparent;
+			border-left:30px solid red;
+			border-bottom: 30px solid transparent;
+		}
+
+		.page5 ul li:nth-child(6){
+			border-right:30px solid transparent;
+			border-top: 30px solid red;
+			border-left:30px solid red;
+			border-bottom: 30px solid transparent;
+		}
+		.page5 ul li:nth-child(7){
+			border-right:30px solid green;
+			border-top: 30px solid transparent;
+			border-left:30px solid transparent;
+			border-bottom: 30px solid green;
+		}
