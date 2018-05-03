@@ -1,0 +1,87 @@
+@charset:utf-8;
+*{
+	padding:0;
+	margin:0;
+	text-decoration: none;
+}
+body{
+	background-color: #fff2e3;
+}
+.good{
+	width: 50%;
+	margin:50px auto;
+	border:1px solid #ccc;
+	padding: 15px;
+	text-align: center;
+}
+.good h1{
+	font: 50px/2 Microsoft YaHei;
+	color:#87968e;
+}
+.good p{
+	color: #ccc;
+	font-size: 16px;
+	margin: 30px;
+}
+.good ul{
+	list-style-type: none;
+	margin: 0 auto;
+	text-align: center;
+}
+.good ul li{
+	width:18%;
+	line-height: 20px;
+	font: 16px/2 Microsoft YaHei;
+	background-color: #72b890;
+	border-radius: 5px;
+	float: left;
+	margin-right: 10px;
+	color: white;
+	display: inline-block;
+}
+.good ul li:hover{
+	opacity: .8;
+}
+.good ul li:first-child{
+	opacity: .8;
+}
+.good ul li:first-child:hover{
+	opacity: .7;
+}
+.good div{
+	width: 100%;
+	height: 300px;
+	display: block;
+	margin-top: 50px;
+	background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525947111&di=649aad013b18cb9c48b37cbc27de53b4&imgtype=jpg&er=1&src=http%3A%2F%2Fimg5.duitang.com%2Fuploads%2Fitem%2F201512%2F22%2F20151222194007_LQZ4J.jpeg')
+	center center;
+	background-size:cover;
+}
+.good form{
+	padding: 15px;
+	text-align: center;
+	display:flex;
+
+}
+.good form input{
+	margin:auto;
+	border:none;
+	background-color: #72b890;
+	font: 16px/2 Microsoft YaHei;
+	line-height: 20px;
+	float: left;
+	color: white;
+	height: 30px;
+	margin-left: 30px;
+	border-radius: 5px;
+	width: 25%;
+}
+.good form input:first-child{
+	margin-left: 80px;
+}
+.good form input:hover{
+	opacity: .7;
+}
+.good a{
+	color: #72b890;
+}
