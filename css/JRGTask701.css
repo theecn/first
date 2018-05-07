@@ -27,9 +27,10 @@ body{
 	list-style-type: none;
 	margin: 0 auto;
 	text-align: center;
+	display: inline-block;
 }
 .good ul li{
-	width:18%;
+	padding:3px 10px;
 	line-height: 20px;
 	font: 16px/2 Microsoft YaHei;
 	background-color: #72b890;
@@ -38,6 +39,7 @@ body{
 	margin-right: 10px;
 	color: white;
 	display: inline-block;
+	cursor: pointer;
 }
 .good ul li:hover{
 	opacity: .8;
