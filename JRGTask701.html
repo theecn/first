@@ -4,8 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/JRGTask701.css">
+	<script>
+			function codeShow() {
+				var box=document.getElementById('content').innerHTML;
+				var text=document.getElementById('codeContent');
+				var so=document.createElement('code');
+					text.style.display="block";
+					text.setAttribute('class','useful');
+					text.appendChild(so);
+				var dog=text.firstChild.innerHTML;
+					dog.document.writeIn(box);
+			}
+	</script>
 </head>
-<body>
+<body id="content">
 	<div class="good">
 		<h1>我的项目</h1>
 		<p>这只是第一个项目。以后还会有很多。拭目以待吧</p>
@@ -15,15 +27,16 @@
 			<li>项目3</li>
 			<li>项目4</li>
 			<li>项目5</li>
-			
 		</ul>
 		<br>
-		<div></div>	
+		<div class="imgs"></div>	
 		<form action="">
-			<input type="button" value="查看源码">
+			<input type="button" value="查看源码" id="show" onclick="codeShow()">
 			<input type="button" value="使用说明">
 		</form>
 		<p>作者：<a href="##">我</a></p>
+		<div id="codeContent">
+		</div>
 	</div>
 </body>
 </html>

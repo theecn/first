@@ -48,7 +48,7 @@ body{
 .good ul li:first-child:hover{
 	opacity: .7;
 }
-.good div{
+.good .imgs{
 	width: 100%;
 	height: 300px;
 	display: block;
@@ -84,4 +84,12 @@ body{
 }
 .good a{
 	color: #72b890;
+}
+.useful{
+	margin:0 auto;
+	width: 80%;
+	display:none;
+	height: 300px;
+	overflow: auto;
+	border:1px solid #ccc;
 }
