@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>饥人谷Task9</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_656723_wq2y9m8ewdygb9.css">
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			animation: all .3s;
+		}
+		ul{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+		.container{
+			width: 40%;
+			height: 35px;
+			line-height: 35px;
+			font-weight: 35px;
+			text-align: center;
+			
+			background-color: #ccc;
+			border: 1px solid #ccf;
+			box-shadow: 3px 3px 3px ;
+			margin: 50px auto;
+		}
+		.container>ul>li{
+			float: left;
+			width: 80px;
+		}
+		.container>ul>li:first-child{
+			margin-left: 50px;
+		}
+		.container>ul>li:hover{
+			background-color: #cad;
+		}
+	
+		.dropdownContent{
+			display: none;
+		}
+		.dropdownContent>li{
+			width: 200px;
+			background: #ccc;
+			box-shadow: 3px 3px 3px;
+		}
+		.dropdownContent>li:hover{
+			background: white;
+		}
+		.dropdown:hover .dropdownContent{
+			display: block;
+		}
+/*另一个*/
+		.container1{
+			margin: 0 auto;
+			width: 40%;
+		}
+		.container1 ul{
+			padding: 0;
+			margin: 0;
+		}
+		.container1 ul>li{
+			height:90px;
+			border-radius: 5px;
+			margin-bottom: 40px;
+			position: relative;
+			color: white;
+		}
+		.container1 ul>li>span{
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+		.container1 ul>li>h3{
+			margin-left: 20px;
+			line-height: 60px;
+			font-weight: 60px;
+		}
+		.container1 ul>li>p{
+			margin-left: 20px;
+			margin-top: -10px;
+		}
+		.container1 ul>li:first-child{
+			background: #4CAF50;
+		}
+		.container1 ul>li:nth-child(2){
+			background: #2196F3;
+		}
+		.container1 ul>li:nth-child(3){
+			background: #f44336;
+		}
+		.container1 ul>li:last-child{
+			background: #ff9800;
+		}
+		.icon-cuo{
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul >
+			<li>首页</li>
+			<li>作品</li>
+			<li class="dropdown">更多
+				<ul class="dropdownContent">
+					<li>Github</li>
+					<li>知乎</li>
+					<li>博客</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<hr>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="container1">
+		<ul>
+			<li >
+				<h3 class="title">恭喜你</h3>
+				<span class="iconfont icon-cuo"></span>
+				<p class="para">获得本周学霸，继续加油吧</p>
+			</li>
+			<li >
+				<h3 class="title">通知</h3>
+				<span class="iconfont icon-cuo"></span>
+				<p>晚上上课，不要忘了</p>
+			</li>
+			<li >
+				<h3 class="title">天啊</h3>
+				<span class="iconfont icon-cuo"></span>
+				<p>居然几天没有做任务</p>
+			</li>
+			<li >
+				<h3 class="title">警告</h3>
+				<span class="iconfont icon-cuo"></span>
+				<p>学如逆水行舟，不进则退</p>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
