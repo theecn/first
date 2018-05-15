@@ -35,6 +35,24 @@
 			min-width: 60px;
 			min-height: 60px;
 		}
+		.text2{
+			margin:0 auto;
+			width: 50%;
+			background: green;
+			padding:10px;
+		}
+		.text2 ul{
+			background: #ccc;
+		}
+		.text2 ul::after{
+			content: "";
+			clear: both;
+			display: block;
+		}
+		.text2 ul li{
+			float: left;
+			margin: 20px;
+		}
 	</style>
 </head>
 <body>
@@ -72,5 +90,13 @@
 			<input type="reset" name="重置" id="">
 		</form>	
 	</div>		
+	<hr>
+	<div class="text2">
+		<ul>
+			<li><a href="#">会不会坍塌</a></li>
+			<li><a href="#">会不会坍塌</a></li>
+			<li><a href="#">会不会坍塌</a></li>
+		</ul>
+	</div>
 </body>
 </html>
