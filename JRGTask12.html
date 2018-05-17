@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>饥人谷Task12</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+		.h1{
+			margin:0 auto;
+		}
+		.container{
+			width: 60%;
+			margin:20px auto;
+			text-align: center;
+			min-width: 500px;
+		}
+		/*第一题*/
+		.ques1{
+			width: 100%;
+			/*border:1px solid green;*/
+			/*display: table-cell;*/
+		}
+		.ques1 .leftBox{
+			height:400px;
+			width: 200px;
+			background: red;
+			float: left;
+			/*display: table-cell;*/
+		}
+		.ques1 .rightBox{
+			height: 500px;
+			width: calc(100%-200px);
+			/*display: table-cell;*/
+			margin-left: 210px;
+			background: blue;
+		}
+/*		.ques1 .rightBox::after{
+			content: '';
+			display: block;
+			clear: both;
+		}*/
+		/*第二题*/
+		.ques2{
+			width: 100%;
+			min-width: 500px;
+		}
+		.left,.right{
+			width: 200px;
+			height: 400px;
+		}
+		.left{
+			float: left;
+			background:red;
+		}
+		.right{
+			float: right;
+			background: blue;
+		}
+		.main{
+			height: 500px;
+			width: auto;
+			margin-left: 210px; 
+			margin-right: 210px;
+			background-color: pink;
+		}
+		/*第三题*/
+		.ques3{
+			width: 100%;
+			background: #ccc;
+			text-align: center;
+			height: 300px;		
+		}
+		.ques3>div{
+			background: red;
+			height: 200px;
+			width: 300px;
+			margin:0px auto;
+		}
+		/*第五题*/
+		.ques5{
+			background: #ccc;
+			height: 200px;
+			text-align: center;
+		}
+		.ques5>div{
+			width: 50%;
+			height: 100px;
+			margin:0 auto;
+			/*border:1px solid green;*/
+			position: relative;
+			top: 50%;
+			transform:translateY(-50%);
+		}
+		.ques5>div::before{
+			content: '';
+			height: 15px;
+			display: block;
+		}
+		/*另一题·*/
+		.ques6{
+			height: 100px;
+			background: #ccc;
+		}
+		.ques6>ul{
+			list-style-type: none;
+			text-align: center;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.ques6>ul>li{
+			display: inline-block;
+			width: 120px;
+			height: 40px;
+			line-height: 40px;
+			border-radius: 5px;
+			background: red;
+			color: white;
+			font-weight: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>第一题</h1>
+		<div class="ques1">
+			<div class="leftBox"></div>
+			<div class="rightBox">
+				<p style="color:white;">本题关键代码是右盒子的css设置有以下几种方法</p>
+				<ol style="list-style-type:none;color:white;vertical-align:middle;text-align:left;position: relative;top:50%;transform: translateY(-50%);">
+					<li>1.利用css计算器，设置宽度为cacl（100%-200px）</li>
+					<li>2.利用伪元素触发右盒子的bfc，</li>
+					<li>3.利用table-cell布局，父元素、左盒子设置宽高和display：table-cell，右盒子不设宽度但设置宽度table-cell。缺点是当屏幕尺寸缩小到一定程度时，右盒子会重新生成一行新的，而不是留在原来那行进行大小变化。</li>
+					<li>4.利用flex</li>
+				</ol>
+			</div>
+		</div>
+		<br>
+		<hr>
+		<h1>第二题</h1>
+		<div class="ques2">
+			<div class="left"></div>
+			<div class="right"></div>
+			<div class="main"></div>
+		</div>
+		<br>
+		<hr>
+		<br>
+	</div>
+	<div class="ques3">
+		<h1>第四题</h1>
+		<div>宽300px，高200px，在页面水平居中</div>
+	</div>
+	<br>
+	<div class="ques5">
+		<div>
+			<h1>这是标题,第五题</h1>
+			<p>这是内容，这段文字在当前区块内垂直水平居中</p>
+		</div>
+	</div>
+	<hr>
+	<br>
+	<h1 style="text-align:center">第六题</h1>
+	<div class="ques6">
+		<ul>
+			<li>按钮1</li>
+			<li>按钮2</li>
+			<li>按钮3</li>
+		</ul>
+	</div>
+	
+</body>
+</html>
