@@ -12,5 +12,6 @@
 10. Task12,https://theecn.github.io/first/Task12.html
 <hr>
 ##### Tips:
-All of these are written before I have studied the CSS coding standard carefully.I know I`m just on the starting way to be a powerful Front end developer,so cheer on.
+All of these are written before I have studied the CSS coding standard carefully.I know 
+I am just on the starting way to be a powerful Front end developer,so cheer on.
 <hr>
