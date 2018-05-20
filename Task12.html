@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.warp{
+		width: 500px;
+		height: 400px;
+		margin:100px auto;
+		border:1px solid #ccc;
+		position: relative;
+	}
+	.warp::before{
+		content: '';
+		position: absolute;
+		right: 0;
+		border-right: 50px solid red;
+		border-top:  50px solid red;
+		border-bottom: 50px solid transparent;
+		border-left: 50px solid transparent;
+	}
+	.text1::before{
+		content: '';
+		position: absolute;
+		left: 30px;
+		right: auto;
+		top: -100px;
+		border-right: 50px solid transparent;
+		border-top:  50px solid transparent;
+		border-bottom: 50px solid #ccc;
+		border-left: 50px solid transparent;
+	}
+	.text1::after{
+		content: '';
+		position: absolute;
+		left: 31px;
+		right: auto;
+		top: -99px;
+		border-right: 49px solid transparent;
+		border-top:  50px solid transparent;
+		border-bottom: 50px solid white;
+		border-left: 49px solid transparent;
+	}
+	.text2::before{
+		content: '';
+		position: absolute;
+		left: 15px;
+		right: auto;
+		top:-100px;
+		border-right: 50px solid transparent;
+		border-top:  50px solid transparent;
+		border-bottom: 50px solid #ccc;
+		border-left: 50px solid transparent;
+	}
+</style>
+<body>
+	<div class="warp text2"></div>
+	<div class="warp"></div>
+	<div class="warp text1"></div>
+</body>
+</html>
