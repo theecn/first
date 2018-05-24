@@ -11,6 +11,11 @@
 9. Task1109,https://theecn.github.io/first/Task1109.html
 10. Task12,https://theecn.github.io/first/Task12.html
 <hr>
+<<<<<<< HEAD
 #####Tips:
 All of these are written before I have studied the CSS coding standard carefully.I know I`m just on the starting way to be a powerful Front end developer,so cheer on.
+=======
+All of these are written before I have studied the CSS coding standard carefully.I know 
+I am just on the starting way to be a powerful Front end developer,so cheer on.
+>>>>>>> de8efe8e2aec2c37bb5753fa8de85caf4fc882a5
 <hr>
