@@ -190,6 +190,14 @@ section .family-intro p {
   display: block;
   clear: both;
 }
+.timeline li dt {
+  font-weight: bold;
+  font-size: 22px;
+}
+.timeline li dl dd {
+  font-size: 18px;
+  font-weight: bold;
+}
 .timeline li img { 
   display: inline-block;
   border: 3px solid orange;
@@ -200,4 +208,129 @@ section .family-intro p {
 }
 .timeline li:nth-child(even) img {
   float: right;
+}
+
+/*person-info*/
+.person-info {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.person-info > h1 {
+  font-size: 50px;
+}
+.person-info > figure {
+  margin-top: 20px;
+  width: calc(100%/3);
+  float: left;
+}
+.person-info > figure > figcaption {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.person-info > figure > img {
+  width: 200px; 
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.person-info > figure > div span {
+  font-size: 35px;
+  padding:10px;
+}
+.person-info > figure > div span:hover {
+  color: #f7ba3e;
+}
+/*small bar*/
+.little-bar {
+  margin-top: 30px;
+  background: #ccc;
+}
+.little-bar ul li {
+  float: left;
+  width: calc(100%/4);
+  font-size: 40px;
+  opacity: .7;
+  cursor: pointer;
+}
+/*last*/
+footer {
+  background: url('../imgs/task132.png') center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 600px;
+  position: relative;
+  margin-top: 30px;
+}
+footer form {
+  width: 90%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+footer form > div {
+  float: left;
+  width: 50%;
+}
+footer form > div input {
+  display: block;
+  margin: 50px;
+  height: 45px;
+  border-radius: 5px;
+  width: 80%;
+}
+footer form > textarea {
+  margin-top: 50px;
+  border-radius: 5px;
+  float: left;
+  height: 230px;
+  width: calc(50% - 50px);
+}
+footer > form a {
+  border: none;
+  color: white;
+  background-color: #f7ba3e;
+  padding:10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 30px;
+  width: 200px;
+  display: inline-block;
+  margin: 30px auto;
+}
+.foot {
+  margin-top: 30px;
+  height: 40px;
+  position: relative;
+}
+.foot p {
+  float: left;
+}
+.foot ul {
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.foot > ul > li {
+  float: left;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 20px;
+}
+.foot p:last-child {
+  float: right;
+}
+.foot p span {
+  margin-right: 60px;
+}
+.foot p span:hover {
+  text-decoration: underline;
+  color: #f7ba3e;
 }
