@@ -220,6 +220,7 @@ section .family-intro p {
   width: calc(100%/3);
   float: left;
 }
+
 .person-info > figure > figcaption {
   margin-top: 20px;
   font-weight: bold;
