@@ -194,10 +194,7 @@ section .family-intro p {
   font-weight: bold;
   font-size: 22px;
 }
-.timeline li dl dd {
-  font-size: 18px;
-  font-weight: bold;
-}
+
 .timeline li img { 
   display: inline-block;
   border: 3px solid orange;
