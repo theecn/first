@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+  .box{
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.14); 
+  }
+
+  .box.active {
+    background: #000;
+    color: #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>hello</h1>
+    <p>jirengu</p>
+  </div>
+  <button id="add">add</button>
+  <button id="remove">remove</button>
+  <button id="toggle1">toggle1</button>
+  <button id="toggle2">toggle1</button>
+  <script>
+    var add = document.querySelector('#add'),
+        remove = document.querySelector('#remove'),
+        toggle1 = document.querySelector('#toggle1'),
+        toggle2 = document.querySelector('#toggle2'),
+        stage = document.querySelector('.box');
+    function change() {
+      add.onclick =  function() {
+        stage.classList.add('active');
+      };
+      remove.onclick = function() {
+        stage.classList.remove('active');
+      };
+      toggle1.onclick = function() {
+        if (stage.classList.contains('active')) {
+          stage.classList.remove('active');
+        } else {
+          stage.classList.add('active');
+        }
+      };
+      toggle2.onclick = function() {
+        stage.classList.toggle('active');
+      }
+    }
+    change()
+  </script>
+</body>
+</html>

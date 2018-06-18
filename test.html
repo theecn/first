@@ -1,0 +1,262 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	  // 	var a=1;
+	  // 	switch(a) {
+	  // 		case a=1 :
+	  // 			console.log('ok');
+	  // 			break;
+	  // 		case a<1 :
+	  // 			console.log('none');
+	  // 			break;
+	  // 	}
+	  // 	var company = {
+   //  		name: '饥人谷',
+   //  		age: 3,
+   //  		sex: '男'
+			// }
+			// function getKeys(obj) {
+			// 	for (var key in obj){
+			// 		console.log(key);
+			// 	}
+			// }
+			// var arr = [1,["1",2,3,[4]],[3,4]];
+			function toStrings(arr){
+				var arr2 = [];
+				arr.forEach(function(elem){
+					if (Array.isArray(arr[elem]) === true) {
+							arr2 = arr2.concat(toStrings(elem));	
+						}else {
+							arr2.push(elem);
+					}
+				})
+				return arr2;		
+			}
+			// toStrings(arr);
+
+			// var arr3 =
+			// var arr = [3, -1,  2,  '饥人谷', true];
+			// function fliterPositive(arr){
+			// 	var arr2 = [];
+			// 	arr.filter(function(elem) {
+			// 		if (typeof elem === "number" && elem > 0) {
+			// 			arr2.push(elem);
+			// 			return arr2;
+			// 		} 
+			// 	})
+			// 	return arr2;
+			// }
+			// 传入另一个参数控制转换类目
+			// function arrSort(arr,type) {
+			// 	var arr2 = [];
+			// 	switch (type) {
+			// 		case 0:
+			// 			arr2 = arr.sort(function (elem1,elem2){
+			// 					return elem1.name > elem2.name;
+			// 					console.log('ok')
+			// 				});
+			// 			return arr2 ;
+			// 			break;
+			// 		case 1:
+			// 			arr2 = arr.sort(function (elem1,elem2){
+			// 				return elem1.age > elem2.age;
+			// 				});
+			// 			return arr2;
+			// 			break;
+			// 		case 2:
+			// 			arr2 = arr.sort(function (elem1,elem2){
+			// 					return elem1.company > elem2.company;
+			// 					console.log('ok')
+			// 				});
+			// 			return arr2;
+			// 			break;
+			// 		default:
+			// 			return "转换类目出错";
+			// 	}
+			// }
+			// 
+			// var arr = [1,2,3,4];
+			// arr.forEach(function (elem,index,arr){
+			// 	return elem*index;
+			// });
+			// function pop(arr) {
+			// 	arr.splice(arr.length-1,1);
+			// 	return arr;
+			// }
+			// function shift(arr) {
+			// 	arr.splice(0,1);
+			// 	return arr;
+			// }
+			// function unshift(arr) {
+			// 	for(var i=1; i<arguments.length;i++){
+			// 		arr.splice(0,0,arguments[i]);
+			// 	}
+			// 	return arr;
+			// }
+			function getrandomIP(index) {
+				var str = [];
+				for (var i = 0;i < index;i++) {
+					str.push(Math.floor(Math.random()*255));
+				}
+				return str.join('.');
+			}
+			function getRandColor(value){
+			 var str = '0123456789abcdefhijklmnopqrstuvwsyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+			 var str2 = '';
+			 for (var i = 0; i < value;i++){
+			 	var index = Math.floor(Math.random()*str.length);
+			 	str2 += str[index];
+			 }
+			 return  str2;
+			}
+			function getNumber() {
+				return Math.floor(Math.Max())
+			}
+// 			// 刚刚（ t 距当前时间不到1分钟时间间隔）
+// 3分钟前 (t距当前时间大于等于1分钟，小于1小时)
+// 8小时前 (t 距离当前时间大于等于1小时，小于24小时)
+// 3天前 (t 距离当前时间大于等于24小时，小于30天)
+// 2个月前 (t 距离当前时间大于等于30天小于12个月)
+// 8年前 (t 距离当前时间大于等于12个月)
+			// function friendlyDate(time) {
+			// 	var currentTime = new Date();
+			// 	var localTime = currentTime.getTime();
+			// 	var offsetTime =  currentTime - localTime;
+			// 	switch (offsetTime) {
+			// 		case offsetTime < 1000*60:
+			// 			return '刚刚';
+			// 			break;
+			// 		case offsetTime >= 1000*60 && offsetTime < 60*60*1000:
+			// 			return '三分钟前';
+			// 			break;
+			// 		case offsetTime >= 60*60*1000 && offsetTime < 24*60*60*1000:
+			// 			return '八小时前';
+			// 			break;
+			// 		case offsetTime >= 24*60*60*1000 && offsetTime < 30*24*60*60*1000:
+			// 			return '三天前';
+			// 			break;
+			// 		case offsetTime >= 30*24*60*60*1000 && offsetTime < 12*30*24*60*60*1000:
+			// 			return '二个月前';
+			// 			break;
+			// 		case offsetTime >= 12*30*24*60*60*1000:
+			// 			return '八年前';
+			// 			break;
+			// 	}
+			// }
+			// function getDays() {
+			// 	var today = new Date();
+			// 	var today1 = today.getTime();
+			// 	var lovingDay = new Date(2015,11,24,0);
+			// 	return Math.round((today1 - lovingDay.getTime())/(24*60*1000));
+			// }
+			// function randomNum(min,max) {
+			// 	var s = Math.floor(Math.random()*(max-min));
+			// 	return s;
+			// }
+			// randomNum(10,40);
+			    // function friendlyDate(time) {
+       //      var currentTime = new Date();
+       //      var localTime = currentTime.getTime();
+       //      var offsetTime =  time - localTime;
+       //      switch (offsetTime) {
+       //          case offsetTime < 1000*60:
+       //              return '刚刚';
+       //              break;
+       //          case offsetTime >= 1000*60&&offsetTime < 60*60*1000:
+       //              return '三分钟前';
+       //              break;
+       //          case offsetTime >= 60*60*1000&&offsetTime < 24*60*60*1000:
+       //              return '八小时前';
+       //              break;
+       //          case offsetTime >= 24*60*60*1000&&offsetTime < 30*24*60*60*1000:
+       //              return '三天前';
+       //              break;
+       //          case offsetTime >= 30*24*60*60*1000&&offsetTime < 12*30*24*60*60*1000:
+       //              return '二个月前';
+       //              break;
+       //          case offsetTime >= 12*30*24*60*60*1000:
+       //              return '八年前';
+       //              break;
+       //          default:
+       //          	return 'guck';
+       //      }
+       //  }
+       function isValidUsername(str) {
+	       	var type = str.search(/^(\w){6,20}$/);
+	       	if ( type > -1) {
+	       		return '输入正确';
+	       	} else {
+						return '请输入正确的用户名';
+	       	}
+				}
+				function isEmail(str) {
+					// var str2 = str.search(/^[A-Za-z1-9]@?([a-z]|[1-9])\.(com|cn)$/);
+					var str2 = str.search(/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/);
+					if ( str2 > -1) {
+	       		return '输入正确';
+	       	} else {
+						return '请输入正确的邮箱地址';
+	       	}
+				}
+				function trim(str) {
+					return str.replace(/(^\s*)|(\s*$)/g,'');
+				}
+				var timer ;
+				function sayhi() {
+					if (timer) {
+						clearTimeout(timer);
+						console.log('ok');
+					}
+					timer = setTimeout(function() {
+						console.log('hello')
+					},3000);
+				}
+
+	</script>	
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<ul class="ct">
+    <li data-img="1.png">鼠标放置查看图片1</li>
+    <li data-img="2.png">鼠标放置查看图片2</li>
+    <li data-img="3.png">鼠标放置查看图片3</li>
+</ul>
+<div class="img-preview"></div>
+<script>
+  function getInfo() {
+    var imgInfos = document.querySelectorAll('.ct > li'),
+    		show  = document.querySelector('.img-preview'),
+        list = document.querySelectorAll('li');
+    list.forEach(function(elem) {
+    	elem.onmouseover = function() {
+    		show.innerText = '正在访问' + '   ' + elem.getAttribute('data-img');
+    	}
+    })
+    console.log(show);
+  }
+  getInfo();
+  function css(node, styleObj){
+  	for (var key in styleObj) {
+  		node.setAttribute('key','styleObj[key]');
+  		console.log(key,styleObj[key])
+  	}
+}
+css(document.body, {
+  'color': 'red',
+  'background-color': '#ccc'
+})
+</script>
+</body>
+</html>

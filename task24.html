@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<ul class="ct">
+  <li>这里是</li>
+  <li>饥人谷</li>
+  <li>任务班</li>
+</ul>
+<input class="ipt-add-content" placeholder="添加内容" type="text" />
+<button id="btn-add-start">开头添加</button>
+<button id="btn-add-end">结尾添加</button>
+<script>
+window.onload = function() {
+
+	var module =(function(){
+		var	addStart = document.querySelector('#btn-add-start'),
+			addEnd = document.querySelector('#btn-add-end'),
+			showContent = document.querySelector('.ct'),
+			addElem = document.createElement('li'),
+			showContents = document.querySelectorAll('li'),
+		  arr = Array.prototype.slice.call(showContents);//创建数组
+		 console.log(arr[0])
+		var checkstr = function(str){
+			console.log(str.toString().length);
+			return (str.search(/^\s/) === -1)&&(str.toString().length > 0) ? true:alert('请输入非空格开头字符');
+		};//检测输入内容
+		// var addLoop = function (arr,type,elem) {
+		// 	arr.type(elem);
+		// 	arr.forEach(function(elems) {
+		// 		elems.onclick = function () {
+		// 			console.log(elems.innerText);
+		// 		}
+		// 	})
+		// }想要尝试封装功能函数，结果发现不会。
+			addStart.onclick = function(){
+				var first = showContent.firstChild,
+						content = document.querySelector('.ipt-add-content').value;
+				if (checkstr(content)) {
+					addElem.innerText = content;
+					showContent.insertBefore(addElem,first);
+					// addLoop(arr,'unshift',addElem)
+					arr.unshift(addElem);
+					arr.forEach(function(elem){
+						elem.onclick = function () {
+							console.log(elem.innerText);
+						}
+					});	
+				}
+			};
+			addEnd.onclick = function () {
+				var content = document.querySelector('.ipt-add-content').value;
+				if (checkstr(content)) {
+					addElem.innerText = content;
+					showContent.appendChild(addElem);
+					arr.push(addElem);
+					arr.forEach(function(elem){
+						elem.onclick = function () {
+							console.log(elem.innerText);
+						}
+					});	
+				} 
+			};//绑定事件
+	})();
+}
+
+</script>
+
+</body>
+</html>
