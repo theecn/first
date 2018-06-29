@@ -41,7 +41,9 @@ window.onload = function() {
 				var first = showContent.firstChild,
 						content = document.querySelector('.ipt-add-content').value;
 				if (checkstr(content)) {
+					var addElem = document.createElement('li');
 					addElem.innerText = content;
+					content = '';console.log(content)
 					showContent.insertBefore(addElem,first);
 					// addLoop(arr,'unshift',addElem)
 					arr.unshift(addElem);
@@ -50,11 +52,13 @@ window.onload = function() {
 							console.log(elem.innerText);
 						}
 					});	
+
 				}
 			};
 			addEnd.onclick = function () {
 				var content = document.querySelector('.ipt-add-content').value;
 				if (checkstr(content)) {
+					var addElem = document.createElement('li');
 					addElem.innerText = content;
 					showContent.appendChild(addElem);
 					arr.push(addElem);

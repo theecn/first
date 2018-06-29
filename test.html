@@ -226,6 +226,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
+  <style>
+  	.img-preview {
+		color:red;
+  	}
+  </style>
 </head>
 <body>
 <ul class="ct">
@@ -244,7 +249,7 @@
     		show.innerText = '正在访问' + '   ' + elem.getAttribute('data-img');
     	}
     })
-    console.log(show);
+    console.log(show.style[color]);
   }
   getInfo();
   function css(node, styleObj){
@@ -257,6 +262,38 @@ css(document.body, {
   'color': 'red',
   'background-color': '#ccc'
 })
+function isAndroid (){
+	var str = navigator.userAgent;
+	if(str.search(/android/igm) > -1){
+		console.log('安卓浏览器')
+	} else {
+		console.log('不是安卓浏览器')
+	}
+}
+function isIphone (){
+	var str = navigator.userAgent;
+	if(str.search(/iphone/igm) > -1){
+		console.log('苹果手机')
+	} else {
+		console.log('不是苹果手机')
+	}
+}
+function isIpad (){
+	var str = navigator.userAgent;
+	if(str.search(/ipad/igm) > -1){
+		console.log('ipad')
+	} else {
+		console.log('不是ipad')
+	}
+}
+function isIOS (){
+	var str = navigator.userAgent;
+	if(str.search(/mac/igm) > -1){
+		console.log('mac')
+	} else {
+		console.log('不是mac')
+	}
+}
 </script>
 </body>
 </html>
